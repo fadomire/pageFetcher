@@ -1,0 +1,26 @@
+<div class="row page-heading">
+  <div class="media page-title span12">
+    <%= image_tag("http://graph.facebook.com/"+@page.page_id+"/picture?type=square", :class => "pull-left img-polaroid medi-object")%>
+    <div class="media-body">
+      <h4 class="media-heading"><%= @page.name %></h4>
+    </div>
+  </div>
+</div>
+
+  <% @feeds['data'].each do |feed| %>
+    <div class="row">
+      <div class="media span12">
+        <h5 class="media-heading"><%= feed['from']['name'] %></h5>
+        <div class="row">
+          <div class="span2">
+            <%= image_tag(feed['picture'].blank? ? 'http://placehold.it/100x100' : feed['picture'], :class => "pull-left img-polaroid media-object")%>
+          </div>
+          <div class="media-body span10">
+            <p><%= feed['message'] %></p>
+            <small class="muted"><%= time_ago_in_words(feed['created_time']) %>&nbsp;ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+<% end %>

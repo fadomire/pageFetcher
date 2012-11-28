@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: Facebook
+  page_id: facebook
+
+two:
+  name: Tiger Lily
+  page_id: tigerlilyapps
+
+three:
+  name: Test name
+  page_id: 123123

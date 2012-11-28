@@ -1,0 +1,40 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+.brand {
+	text-align: center;
+}
+footer {
+	height: 50px;
+}
+.fetch-btn {
+	text-align: center;
+}
+.page-title {
+	height: 70px;
+	position:relative;
+}
+.page-title h4 {
+	margin-top: 0px;
+}
+.fetcher-form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.action-button {
+	position: absolute;
+	bottom: 0;
+}
+.page-heading {
+	margin-bottom: 20px;
+}
