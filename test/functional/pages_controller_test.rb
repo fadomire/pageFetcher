@@ -18,6 +18,13 @@ class PagesControllerTest < ActionController::TestCase
     assert_redirected_to pages_path
   end
 
+  test "should not create page because facebook page is not valid" do
+    assert_equal('Page.count', 'Page.count') do
+      post :create, page: {page_id: 'kqjsdlqjsdlksqjdlkqsdj'}
+    end
+    assert_template :index
+  end
+
   test "should show page" do
     get :show, id: @page
     assert_response :success

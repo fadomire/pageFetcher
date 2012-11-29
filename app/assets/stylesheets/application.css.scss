@@ -11,18 +11,13 @@
  *= require_self
  *= require_tree .
 */
-.brand {
-	text-align: center;
-}
 footer {
 	height: 50px;
-}
-.fetch-btn {
-	text-align: center;
 }
 .page-title {
 	height: 70px;
 	position:relative;
+  margin-bottom:50px;
 }
 .page-title h4 {
 	margin-top: 0px;

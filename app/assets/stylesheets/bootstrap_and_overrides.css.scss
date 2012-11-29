@@ -1,8 +1,19 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 90px; }
 @import "bootstrap-responsive";
 
+
 .navbar .brand {
-  float: none;
-  margin-left:0;
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 20px;
+}
+.navbar-inner {
+  min-height: 60px;
+}
+.fetcher-form input[type="text"]{
+  height: 34px;
+}
+.fetcher-form input {
+  margin-bottom: 10px;
 }

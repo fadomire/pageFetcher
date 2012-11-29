@@ -9,10 +9,12 @@
       <% end %>
     <% end %>
   <% end %>
-  <div class="field">
-    <%= f.text_field :page_id, :class => "span12", :placeholder => "Enter facebook page ID or Name..." %>
-  </div>
-  <div class="actions fetch-btn">
-    <%= f.submit "Fetch It !", :class => "btn btn-large btn-primary" %>
+  <div class="row field">
+    <div class="span9">
+    <%= f.text_field :page_id, :class => "span9", :placeholder => "Enter facebook page ID or Name..." %>
+    </div>
+    <div class="span3">
+    <%= f.submit "Fetch It !", :class => "span3 btn btn-large btn-primary" %>
+    </div>
   </div>
 <% end %>

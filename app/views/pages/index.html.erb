@@ -3,12 +3,12 @@
     <%= render 'form' %>
   </div>
 </div>
+<div class="row">
 <% @pages.each do |page| %>
-  <div class="row">
     <div class="span1">
       <%= link_to image_tag("http://graph.facebook.com/"+page.page_id+"/picture?type=square", :class => "img-polaroid"), page, :class => "thumbnail" %>
     </div>
-    <div class="span11 page-title">
+    <div class="span3 page-title">
       <h4>
         <%= link_to page.name, page %>
       </h4>
@@ -17,6 +17,5 @@
         <%= link_to 'Destroy', page, confirm: 'Are you sure?', method: :delete, :class => "btn btn-mini" %>
       </div>
     </div>
-  </div>
-  <hr/>
 <% end %>
+</div>
