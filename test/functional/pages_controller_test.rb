@@ -19,8 +19,8 @@ class PagesControllerTest < ActionController::TestCase
   end
 
   test "should not create page because facebook page is not valid" do
-    assert_equal('Page.count', 'Page.count') do
-      post :create, page: {page_id: 'kqjsdlqjsdlksqjdlkqsdj'}
+    assert_difference('Page.count', +0) do
+      post :create, page: {page_id: 'khqskjdhkjqshdkjqdhkjsdhq'}
     end
     assert_response :success
   end
