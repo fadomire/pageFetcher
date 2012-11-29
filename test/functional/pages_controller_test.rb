@@ -22,7 +22,7 @@ class PagesControllerTest < ActionController::TestCase
     assert_equal('Page.count', 'Page.count') do
       post :create, page: {page_id: 'kqjsdlqjsdlksqjdlkqsdj'}
     end
-    assert_template :index
+    assert_response :success
   end
 
   test "should show page" do
