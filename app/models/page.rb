@@ -1,5 +1,4 @@
 require 'open-uri'
-require 'json'
 
 class Page < ActiveRecord::Base
   default_scope :order => 'created_at DESC'
