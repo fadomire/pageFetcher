@@ -7,10 +7,6 @@ class PagesController < ApplicationController
     # Forward @page so that creation form can be rendered properly in index view
     @page  = Page.new
     
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @pages }
-    end
   end
 
   # GET /pages/1
@@ -21,10 +17,6 @@ class PagesController < ApplicationController
     # Forward Json facebook reply as a @feeds object to display it in view
     @feeds = Page.getFacebookFeeds(@page.page_id)
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @page }
-    end
   end
 
   # GET /pages/1/edit
